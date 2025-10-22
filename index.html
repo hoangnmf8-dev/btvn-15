@@ -4,96 +4,263 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Bài tập về nhà buổi 15</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/themes/prism-okaidia.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/plugins/line-numbers/prism-line-numbers.css"
+    />
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/style.css" />
   </head>
-  <style>
-    a {
-      display: inline-block;
-      text-decoration: none;
-      padding: 10px 20px;
-      background-color: rgb(66, 172, 238);
-      min-width: 70px;
-      text-align: center;
-      margin-bottom: 10px;
-      color: white;
-    }
-    a:hover {
-      background-color: #3747f5;
-    }
-  </style>
+
   <body>
-    <h1>Bài tập về nhà buổi 15</h1>
-    <p>Click vào nút để di chuyển đến bài tập tương ứng</p>
-    <ol>
-      <li>
-        <a
-          href="https://hoangnmf8-dev.github.io/btvn-15/ex01.html"
-          target="_blank"
-          >Bài 1</a
-        >
-      </li>
-      <li>
-        <a
-          href="https://hoangnmf8-dev.github.io/btvn-15/ex02.html"
-          target="_blank"
-          >Bài 2</a
-        >
-      </li>
-      <li>
-        <a
-          href="https://hoangnmf8-dev.github.io/btvn-15/ex03.html"
-          target="_blank"
-          >Bài 3</a
-        >
-      </li>
-      <li>
-        <a
-          href="https://hoangnmf8-dev.github.io/btvn-15/ex04.html"
-          target="_blank"
-          >Bài 4</a
-        >
-      </li>
-      <li>
-        <a
-          href="https://hoangnmf8-dev.github.io/btvn-15/ex05.html"
-          target="_blank"
-          >Bài 5</a
-        >
-      </li>
-      <li>
-        <a
-          href="https://hoangnmf8-dev.github.io/btvn-15/ex06.html"
-          target="_blank"
-          >Bài 6</a
-        >
-      </li>
-      <li>
-        <a
-          href="https://hoangnmf8-dev.github.io/btvn-15/ex07.html"
-          target="_blank"
-          >Bài 7</a
-        >
-      </li>
-      <li>
-        <a
-          href="https://hoangnmf8-dev.github.io/btvn-15/ex08.html"
-          target="_blank"
-          >Bài 8</a
-        >
-      </li>
-      <li>
-        <a
-          href="https://hoangnmf8-dev.github.io/btvn-15/ex09.html"
-          target="_blank"
-          >Bài 9</a
-        >
-      </li>
-      <li>
-        <a
-          href="https://hoangnmf8-dev.github.io/btvn-15/ex10.html"
-          target="_blank"
-          >Bài 10</a
-        >
-      </li>
-    </ol>
+    <div class="container">
+      <h1 class="container-heading">Bài tập về nhà buổi 15</h1>
+
+      <section class="code-wrap">
+        <div class="code-wrap-heading">
+          <h2 class="title">Bài 1</h2>
+          <p class="desc">In đoạn văn với số tuổi</p>
+        </div>
+        <pre class="line-numbers">
+          <code class="language-javascript">
+          //Bài 1
+          let age = 25;
+          console.log(`Tôi năm nay ${age} tuổi`);
+          </code>
+        </pre>
+      </section>
+
+      <section class="code-wrap">
+        <div class="code-wrap-heading">
+          <h2 class="title">Bài 2</h2>
+          <p class="desc">Tính diện tích hình tròn</p>
+        </div>
+        <pre class="line-numbers">
+          <code class="language-javascript">
+          //Bài 2
+          const PI = 3.14159;
+          let r = 5;
+          let circularArea = PI * r * r;
+          console.log(`Diện tích hình tròn là: ${circularArea}`);
+          </code>
+        </pre>
+      </section>
+  
+      <section class="code-wrap">
+        <div class="code-wrap-heading">
+          <h2 class="title">Bài 3</h2>
+          <p class="desc">Tính tổng, hiệu, tích, thương, số dư</p>
+        </div>
+        <pre class="line-numbers">
+          <code class="language-javascript">
+          //Bài 3
+          let a = 7;
+          let b = 3;
+          let sum = a + b;
+          console.log(`Tổng của a và b là ${sum}`);
+          let difference = a - b;
+          console.log(`Hiệu của a và b là ${difference}`);
+          let accumulation = a * b;
+          console.log(`Tích của a và b là ${accumulation}`);
+          let quotient = a / b;
+          console.log(`Thương của a và b là ${quotient}`);
+          let remainder = a % b;
+          console.log(`Phần dư của phép chia a cho b là ${remainder}`);
+          </code>
+        </pre>
+      </section>
+  
+      <div class="code-wrap">
+        <div class="code-wrap-heading">
+          <h2 class="title">Bài 4</h2>
+          <p class="desc">Gán giá trị cho biến</p>
+        </div>
+        <pre class="line-numbers">
+          <code class="language-javascript">
+          //Bài 4
+          let name = "";
+          let defaultName = "Khách";
+          let displayName;
+          if (name) {
+            displayName = name;
+          } else {
+            displayName = defaultName;
+          }
+          console.log("🚀 ~ displayName:", displayName);
+          </code>
+        </pre>
+      </div>
+  
+      <section class="code-wrap">
+        <div class="code-wrap-heading">
+          <h2 class="title">Bài 5</h2>
+          <p class="desc">Kiểm tra điều kiện lái xe</p>
+        </div>
+        <pre class="line-numbers">
+          <code class="language-javascript">
+          //Bài 5
+          let driverAge = 18;
+          let hasLicense = true;
+    
+          if (driverAge >= 18 && hasLicense) {
+            console.log("Đủ điều kiện");
+          } else {
+            console.log("Không đủ điều kiện");
+          }
+          </code>
+        </pre>
+      </section>
+  
+      <section class="code-wrap">
+        <div class="code-wrap-heading">
+          <h2 class="title">Bài 6</h2>
+          <p class="desc">Kiểm tra khác rỗng</p>
+        </div>
+        <pre class="line-numbers">
+          <code class="language-javascript">
+          //Bài 6
+          let username = "";
+          let password = "";
+          console.log(username === "");
+          console.log(password === "");
+          </code>
+        </pre>
+      </section>
+  
+      <section class="code-wrap">
+        <div class="code-wrap-heading">
+          <h2 class="title">Bài 7</h2>
+          <p class="desc">Tính phần trăm giảm giá</p>
+        </div>
+        <pre class="line-numbers">
+          <code class="language-javascript">
+          //Bài 7
+          let salePrice = 50000;
+          let regularPrice = 80000;
+          let saleRate = 100 * (1 - salePrice / regularPrice);
+          console.log("🚀 ~ saleRate:", saleRate);
+          </code>
+        </pre>
+      </section>
+  
+      <section class="code-wrap">
+        <div class="code-wrap-heading">
+          <h2 class="title">Bài 8</h2>
+          <p class="desc">Hoán vị 2 biến</p>
+        </div>
+        <pre class="line-numbers">
+          <code class="language-javascript">
+    
+          </code>
+        </pre>
+      </section>
+  
+      <section class="code-wrap">
+        <div class="code-wrap-heading">
+          <h2 class="title">Bài 9</h2>
+          <p class="desc">Tính tiền điện</p>
+        </div>
+        <pre class="line-numbers">
+          <code class="language-javascript">
+          //Bài 9
+          let electricityNumber = 100;
+          let totalCost = 0;
+          const KWH_1 = 1678;
+          const KWH_2 = 1734;
+          const KWH_3 = 2014;
+          const KWH_4 = 2536;
+          const KWH_5 = 2834;
+          const KWH_6 = 2927;
+          const MAX_ELECTRICTYNUMBER_1 = 50;
+          const MAX_ELECTRICTYNUMBER_2 = 100;
+          const MAX_ELECTRICTYNUMBER_3 = 200;
+          const MAX_ELECTRICTYNUMBER_4 = 300;
+          const MAX_ELECTRICTYNUMBER_5 = 400;
+    
+          if (
+            typeof electricityNumber === "number" &&
+            electricityNumber !== NaN &&
+            electricityNumber > 0
+          ) {
+            if (electricityNumber <= MAX_ELECTRICTYNUMBER_1) {
+              totalCost = KWH_1 * electricityNumber;
+            } else if (electricityNumber <= MAX_ELECTRICTYNUMBER_2) {
+              totalCost =
+                KWH_1 * MAX_ELECTRICTYNUMBER_1 +
+                KWH_2 * (electricityNumber - MAX_ELECTRICTYNUMBER_1);
+            } else if (electricityNumber <= MAX_ELECTRICTYNUMBER_3) {
+              totalCost =
+                KWH_1 * MAX_ELECTRICTYNUMBER_1 +
+                KWH_2 * (MAX_ELECTRICTYNUMBER_2 - MAX_ELECTRICTYNUMBER_1) +
+                KWH_3 * (electricityNumber - MAX_ELECTRICTYNUMBER_2);
+            } else if (electricityNumber <= MAX_ELECTRICTYNUMBER_4) {
+              totalCost =
+                KWH_1 * MAX_ELECTRICTYNUMBER_1 +
+                KWH_2 * (MAX_ELECTRICTYNUMBER_2 - MAX_ELECTRICTYNUMBER_1) +
+                KWH_3 * (MAX_ELECTRICTYNUMBER_3 - MAX_ELECTRICTYNUMBER_2) +
+                KWH_4 * (electricityNumber - MAX_ELECTRICTYNUMBER_3);
+            } else if (electricityNumber <= MAX_ELECTRICTYNUMBER_5) {
+              totalCost =
+                KWH_1 * MAX_ELECTRICTYNUMBER_1 +
+                KWH_2 * (MAX_ELECTRICTYNUMBER_2 - MAX_ELECTRICTYNUMBER_1) +
+                KWH_3 * (MAX_ELECTRICTYNUMBER_3 - MAX_ELECTRICTYNUMBER_2) +
+                KWH_4 * (MAX_ELECTRICTYNUMBER_4 - MAX_ELECTRICTYNUMBER_3) +
+                KWH_5 * (electricityNumber - MAX_ELECTRICTYNUMBER_4);
+            } else {
+              totalCost =
+                KWH_1 * MAX_ELECTRICTYNUMBER_1 +
+                KWH_2 * (MAX_ELECTRICTYNUMBER_2 - MAX_ELECTRICTYNUMBER_1) +
+                KWH_3 * (MAX_ELECTRICTYNUMBER_3 - MAX_ELECTRICTYNUMBER_2) +
+                KWH_4 * (MAX_ELECTRICTYNUMBER_4 - MAX_ELECTRICTYNUMBER_3) +
+                KWH_5 * (MAX_ELECTRICTYNUMBER_5 - MAX_ELECTRICTYNUMBER_4) +
+                KWH_6 * (electricityNumber - MAX_ELECTRICTYNUMBER_5);
+            }
+            console.log(`Số tiền điện phải đóng trong tháng là: ${totalCost} đồng`);
+          } else {
+            console.log("Số điện không đúng");
+          }
+          </code>
+        </pre>
+      </section>
+  
+      <section class="code-wrap">
+        <div class="code-wrap-heading">
+          <h2 class="title">Bài 10</h2>
+          <p class="desc">Hiển thị danh sách chẵn lẻ</p>
+        </div>
+        <pre class="line-numbers">
+          <code class="language-javascript">
+          //Bài 10
+          let n = 10;
+    
+          let oddLine  = "Số lẻ: ";
+          let evenLine = "Số chẵn: ";
+    
+          let firstNumber = true;
+          for (let i = 1; i <= n; i += 2) {
+            oddLine += (firstNumber ? "" : ", ") + i;
+            firstNumber = false;
+          }
+    
+          firstNumber = true;
+          for (let i = 0; i <= n; i += 2) {
+            evenLine += (firstNumber ? "" : ", ") + i;
+            firstNumber = false;
+          }
+    
+          console.log(oddLine);
+          console.log(evenLine);
+          </code>
+        </pre>
+      </section>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/prism.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/components/prism-javascript.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/plugins/line-numbers/prism-line-numbers.min.js"></script>
+    <script src="./main.js"></script>
   </body>
 </html>
