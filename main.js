@@ -92,7 +92,7 @@ const MAX_ELECTRICTYNUMBER_5 = 400;
 
 if (
   typeof electricityNumber === "number" &&
-  electricityNumber !== NaN &&
+  !Number.isNaN(electricityNumber) &&
   electricityNumber > 0
 ) {
   if (electricityNumber <= MAX_ELECTRICTYNUMBER_1) {
