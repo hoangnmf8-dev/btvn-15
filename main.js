@@ -68,10 +68,12 @@ let saleRate = 100 * (1 - salePrice / regularPrice);
 console.log("🚀 ~ saleRate:", saleRate);
 
 //Bài 8
-let c = 50;
-let d = 1;
-
-
+let c = 0;
+let d = 10;
+c = c + d;
+d = c - d;
+c -= d;
+console.log(c, d);
 
 //Bài 9
 let electricityNumber = 100;
