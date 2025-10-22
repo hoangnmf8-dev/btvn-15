@@ -1,11 +1,11 @@
 let electricityNumber = 100;
 let totalCost = 0;
-const KWH_1 = 1.678;
-const KWH_2 = 1.734;
-const KWH_3 = 2.014;
-const KWH_4 = 2.536;
-const KWH_5 = 2.834;
-const KWH_6 = 2.927;
+const KWH_1 = 1678;
+const KWH_2 = 1734;
+const KWH_3 = 2014;
+const KWH_4 = 2536;
+const KWH_5 = 2834;
+const KWH_6 = 2927;
 const MAX_ELECTRICTYNUMBER_1 = 50;
 const MAX_ELECTRICTYNUMBER_2 = 100;
 const MAX_ELECTRICTYNUMBER_3 = 200;
@@ -50,7 +50,7 @@ if (
       KWH_5 * (MAX_ELECTRICTYNUMBER_5 - MAX_ELECTRICTYNUMBER_4) +
       KWH_6 * (electricityNumber - MAX_ELECTRICTYNUMBER_5);
   }
-  console.log(`Số tiền điện phải đóng trong tháng là: ${totalCost}`);
+  console.log(`Số tiền điện phải đóng trong tháng là: ${totalCost} đồng`);
 } else {
   console.log("Số điện không đúng");
 }
