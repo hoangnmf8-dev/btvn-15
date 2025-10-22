@@ -1,4 +1,4 @@
-let n = 50;
+let n = 10;
 
 let oddLine  = "Số lẻ: ";
 let evenLine = "Số chẵn: ";
