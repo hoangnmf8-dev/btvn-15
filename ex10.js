@@ -4,7 +4,7 @@ let oddLine  = "Số lẻ: ";
 let evenLine = "Số chẵn: ";
 
 let firstNumber = true;
-for (let i = 1; i < n; i += 2) {
+for (let i = 1; i <= n; i += 2) {
   oddLine += (firstNumber ? "" : ", ") + i;
   firstNumber = false;
 }
