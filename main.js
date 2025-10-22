@@ -1,37 +1,49 @@
 //Bài 1
 let age = 25;
-console.log(`Tôi năm nay ${age} tuổi`);
+if(Number.isFinite(age) && age > 0) {
+  console.log(`Tôi năm nay ${age} tuổi`);
+} else {
+  console.log("Số tuổi không đúng");
+}
 
 //Bài 2
 const PI = 3.14159;
 let r = 5;
-let circularArea = PI * r * r;
-console.log(`Diện tích hình tròn là: ${circularArea}`);
+if(Number.isFinite(r) && r > 0) {
+  let circularArea = PI * r * r;
+  console.log(`Diện tích hình tròn là: ${circularArea}`);
+} else {
+  console.log("Số đo bán kính không đúng");
+}
 
 //Bài 3
 let a = 7;
 let b = 2;
-let sum = a + b;
-console.log(`Tổng của a và b là ${sum}`);
-
-let difference = a - b;
-console.log(`Hiệu của a và b là ${difference}`);
-
-let accumulation = a * b;
-console.log(`Tích của a và b là ${accumulation}`);
-
-if(b !== 0) {
-  let quotient = a / b;
-  console.log(`Thương của a và b là ${quotient}`);
+if(Number.isFinite(a) && Number.isFinite(b)) {
+  let sum = a + b;
+  console.log(`Tổng của a và b là ${sum}`);
+  
+  let difference = a - b;
+  console.log(`Hiệu của a và b là ${difference}`);
+  
+  let accumulation = a * b;
+  console.log(`Tích của a và b là ${accumulation}`);
+  
+  if(b !== 0) {
+    let quotient = a / b;
+    console.log(`Thương của a và b là ${quotient}`);
+  } else {
+    console.log("Phép chia không hợp lệ");
+  }
+  
+  if(b !== 0) {
+    let remainder = a % b;
+    console.log(`Phần dư của phép chia a cho b là ${remainder}`);
+  } else {
+    console.log("Phép lấy dư không hợp lệ");
+  }
 } else {
-  console.log("Phép chia không hợp lệ");
-}
-
-if(b !== 0) {
-  let remainder = a % b;
-  console.log(`Phần dư của phép chia a cho b là ${remainder}`);
-} else {
-  console.log("Phép lấy dư không hợp lệ");
+  console.log("Số a và b không hợp lệ");  
 }
 
 //Bài 4
@@ -49,7 +61,7 @@ console.log("🚀 ~ displayName:", displayName);
 let driverAge = 18;
 let hasLicense = true;
 
-if (driverAge >= 18 && hasLicense) {
+if (Number.isFinite(driverAge) && driverAge >= 18 && hasLicense) {
   console.log("Đủ điều kiện");
 } else {
   console.log("Không đủ điều kiện");
@@ -64,13 +76,19 @@ console.log(password === "");
 //Bài 7
 let salePrice = 50000;
 let regularPrice = 80000;
-let saleRate = 100 * (1 - salePrice / regularPrice);
-console.log("🚀 ~ saleRate:", saleRate);
+let isValidSalePrice = Number.isFinite(salePrice) && salePrice > 0 && salePrice <= regularPrice;
+let isValidRegularPrice = Number.isFinite(regularPrice) && regularPrice > 0;
+if( isValidSalePrice && isValidRegularPrice) {
+  let saleRate = 100 * (1 - salePrice / regularPrice);
+  console.log("🚀 ~ saleRate:", saleRate);
+} else {
+  console.log("Giá sau giảm và giá gốc không hợp lệ");
+}
 
 //Bài 8
 let c = 0;
 let d = 10;
-c = c + d;
+c += d;
 d = c - d;
 c -= d;
 console.log(c, d);
@@ -91,8 +109,8 @@ const MAX_ELECTRICTYNUMBER_4 = 300;
 const MAX_ELECTRICTYNUMBER_5 = 400;
 
 if (
-  typeof electricityNumber === "number" &&
-  !Number.isNaN(electricityNumber) &&
+  
+  Number.isFinite(electricityNumber) &&
   electricityNumber > 0
 ) {
   if (electricityNumber <= MAX_ELECTRICTYNUMBER_1) {
@@ -139,19 +157,24 @@ let n = 10;
 let oddLine  = "Số lẻ: ";
 let evenLine = "Số chẵn: ";
 
-let firstNumber = true;
-for (let i = 1; i <= n; i += 2) {
-  oddLine += (firstNumber ? "" : ", ") + i;
-  firstNumber = false;
+if(Number.isFinite(n)) {
+  let firstNumber = true;
+  for (let i = 1; i <= n; i += 2) {
+    oddLine += (firstNumber ? "" : ", ") + i;
+    firstNumber = false;
+  }
+  
+  firstNumber = true;
+  for (let i = 0; i <= n; i += 2) {
+    evenLine += (firstNumber ? "" : ", ") + i;
+    firstNumber = false;
+  }
+  
+  console.log(oddLine);
+  console.log(evenLine);
+} else {
+  console.log("Đầu vào không hợp lệ");
 }
 
-firstNumber = true;
-for (let i = 0; i <= n; i += 2) {
-  evenLine += (firstNumber ? "" : ", ") + i;
-  firstNumber = false;
-}
-
-console.log(oddLine);
-console.log(evenLine);
 
 
